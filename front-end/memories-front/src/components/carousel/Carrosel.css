@@ -1,0 +1,26 @@
+.carrossel-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.25);
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.25);
+}
