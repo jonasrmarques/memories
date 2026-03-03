@@ -27,8 +27,14 @@ SECRET_KEY = 'django-insecure-*w(h(2k+93e(b64nmd0r2cw0m3q0t2f)75g2)($791n@@987i&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '.onrender.com',  # Isso permite qualquer subdomínio do render.com
+    'memories-back-neob.onrender.com',  # Seu domínio específico
+]
 
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1,.onrender.com').split(',')
 
 # Application definition
 
