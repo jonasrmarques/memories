@@ -6,7 +6,7 @@ const ListaMusica = () => {
   const [musicaSelecionada, setMusicaSelecionada] = useState(null)
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/musicas/")
+    fetch("https://memories-back-neob.onrender.com/api/musicas/")
       .then(res => res.json())
       .then(data => {
         setMusicas(data)

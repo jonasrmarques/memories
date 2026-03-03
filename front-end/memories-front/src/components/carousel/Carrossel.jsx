@@ -12,11 +12,11 @@ const Carrosel = () => {
   const [fotos, setFotos] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/fotos/")
-      .then(res => res.json())
-      .then(data => setFotos(data))
-      .catch(err => console.error(err))
-  }, [])
+    fetch("https://memories-back-neob.onrender.com/api/fotos/")  // ✅ URL do Render
+        .then(res => res.json())
+        .then(data => setFotos(data))
+        .catch(err => console.error(err))
+    }, [])
 
   return (
     <div className="carrossel-container">
